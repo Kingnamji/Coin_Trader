@@ -9,7 +9,15 @@
 
 심사 기준 : 잔여 금액
 
+## 최종 결과
 
+Public : 2위 (23,259$)
+
+Private : 28위 (12947$)
+
+**Award(최종 순위) : 3위**
+
+![awa](https://user-images.githubusercontent.com/69676927/116783042-86b2a300-aac7-11eb-8c8c-1d9fd8c117fc.jpg)
 
 
 ### 참여 목적 
@@ -19,3 +27,20 @@
 - 시계열의 데이터를 다뤄보고 RNN, LSTM 깊이 있게 다시 보기
 
 - 기존에 알고있던 모델에서 더 나아가 통계적 모델(ARIMA, Facebook Prophet 등)을 사용해 실전 경험 쌓기 
+
+### 실행 환경
+- Python3.7
+
+### 라이브러리
+ - fbprophet
+ - pandas
+ - numpy
+
+### 과정
+- arima, prophet등의 모델을 모두 사용했으나, prophet 모델만 사용하기로 결정 (이번 대회에서는 하나의 모델만 사용하기로 했음)
+- 주문량, 거래량 등 아래의 column 중 0값이 포함된 행은 완전히 삭제하거나, 중간 값으로 채워주는 등의 처리
+- Prophet 모델만 사용하기로 결정한 후, 별다른 처리를 하지 않음
+
+### 최종 코드 설명
+
+데이콘 코드공유 게시물 : https://dacon.io/competitions/official/235712/codeshare/2491/
